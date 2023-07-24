@@ -1,0 +1,3 @@
+[submodule "docs/notes"]
+	path = docs/notes
+	url = git@github.com:sunzhenkai/blog-docs.git
