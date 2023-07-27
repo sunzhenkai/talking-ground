@@ -12,6 +12,12 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: '收藏',
+        items: [
+          {text: 'C++', link: '/notes/coding/c++/favor'}
+        ]
+      },
+      {
         text: '链接',
         items: [
           { text: '灵犀', link: 'https://exploring.fun' }
@@ -21,6 +27,10 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sunzhenkai/talking-ground' }
-    ]
+    ],
+
+    footer: {
+      message: '+',
+    }
   }
 })

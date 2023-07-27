@@ -7,10 +7,13 @@ hero:
   text: " "
   tagline: " "
   actions:
-    - theme: alt
-      text: 关于
+    - theme: brand
+      text: 文章
       link: /notes/README.md
     - theme: alt
       text: 灵犀
       link: https://exploring.fun
+    - theme: alt
+      text: github
+      link: https://github.com/sunzhenkai
 ---
