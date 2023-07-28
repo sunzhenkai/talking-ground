@@ -12,9 +12,18 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: '人工智能',
+        items: [
+          {text: '机器学习', link: '/notes/artificial intelligence/machine learning'},
+          {text: '深度学习', link: '/notes/artificial intelligence/deep learning'},
+          {text: '大语言模型', link: '/notes/artificial intelligence/deep learning'},
+          {text: '应用', link: '/notes/artificial intelligence/applications'},
+        ]
+      },
+      {
         text: '收藏',
         items: [
-          {text: 'C++', link: '/notes/coding/c++/favor'}
+          {text: 'C++', link: '/notes/basic programming/c++/favor'}
         ]
       },
       {
