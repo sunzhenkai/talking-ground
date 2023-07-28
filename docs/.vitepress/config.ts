@@ -23,6 +23,7 @@ export default defineConfig({
       {
         text: '收藏',
         items: [
+          {text: '人工智能', link: '/notes/artificial intelligence/favor'},
           {text: 'C++', link: '/notes/basic programming/c++/favor'}
         ]
       },
