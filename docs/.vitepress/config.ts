@@ -12,31 +12,71 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '人工智能',
+        text: '编程基础',
         items: [
-          {text: '机器学习', link: '/notes/artificial intelligence/machine learning'},
-          {text: '深度学习', link: '/notes/artificial intelligence/deep learning'},
-          {text: '大语言模型', link: '/notes/artificial intelligence/deep learning'},
-          {text: '应用', items: [
-            {text: '推荐系统', link: ''}
-          ]},
+          {
+            text: 'C++',
+            collapsed: true,
+            items: [
+
+            ]
+          }
         ]
       },
       {
-        text: '收藏',
+        text: '人工智能',
         items: [
-          {text: '人工智能', link: '/notes/artificial intelligence/favor'},
-          {text: '机器学习', link: '/notes/artificial intelligence/applications/recommend system/favor'},
-          {text: '虚拟化', link: '/notes/computer science/virtualization technology/favor'},
-          {text: '编程基础', items: [
-            {text: 'C++', link: '/notes/basic programming/c++/favor'}
-          ]}
+          {
+            text: '机器学习',
+            link: '/notes/artificial intelligence/machine learning/notes/startup'
+          },
+          {
+            text: '深度学习',
+            link: '/notes/artificial intelligence/deep learning/notes/startup'
+          },
+          {
+            text: '大语言模型',
+            link: '/notes/artificial intelligence/large language model/startup',
+            collapsed: true,
+            items: [
+              { text: '小试', link: './take' }
+            ]
+          },
+          {
+            text: '应用', collapsed: true, items: [
+              { text: '推荐系统', link: '' }
+            ]
+          },
         ]
       },
       {
         text: '研习录',
         items: [
-          {text: '索引', link: '/notes/study record/list'}
+          { text: '索引', link: '/notes/study record/list' }
+        ]
+      },
+      {
+        text: '收藏',
+        items: [
+          { text: '人工智能', link: '/notes/artificial intelligence/favor' },
+          { text: '机器学习', link: '/notes/artificial intelligence/applications/recommend system/favor' },
+          { text: '虚拟化', link: '/notes/computer science/virtualization technology/favor' },
+          {
+            text: '编程基础', collapsed: true, items: [
+              { text: 'C++', link: '/notes/basic programming/c++/favor' }
+            ]
+          },
+          {
+            text: '工具',
+            collapsed: true,
+            link: '/notes/tools/favor',
+            items: [
+              {
+                text: 'vitepress',
+                link: 'https://vitepress.dev/'
+              }
+            ]
+          }
         ]
       },
       {
