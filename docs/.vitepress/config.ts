@@ -9,6 +9,9 @@ var links = {
   ]
 }
 
+var ROOT_VRITUALIZATION_TECHNOLOGY = '/notes/computer science/virtualization technology'
+var ROOT_ENGINEERING_ARCHITECTURE = '/notes/computer science/engineering architecture'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Wii's talking ground",
@@ -87,6 +90,7 @@ export default defineConfig({
       },
       {
         text: '计算机科学',
+        collapsed: false,
         items: [
           {
             text: '操作系统',
@@ -111,7 +115,14 @@ export default defineConfig({
           {
             text: '大数据',
             collapsed: true,
-            items: []
+            link: '/notes/computer science/big data/conceptions/big-data',
+            items: [
+              {
+                text: '工具',
+                collapsed: true,
+                items: []
+              }
+            ]
           },
           {
             text: '云计算',
@@ -121,12 +132,90 @@ export default defineConfig({
           {
             text: '虚拟化',
             collapsed: true,
-            items: []
+            items: [
+              {
+                text: 'docker',
+                link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/usage`,
+                collapsed: true,
+                items: [
+                  {
+                    text: '构建镜像',
+                    link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/make-image`,
+                  },
+                  {
+                    text: '常用容器',
+                    link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/containers`,
+                  },
+                  {
+                    text: '问题排查',
+                    link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/problems`,
+                  },
+                  {
+                    text: '示例',
+                    link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/example`,
+                  },
+                ]
+              }
+            ]
           },
           {
             text: '工程架构',
             collapsed: true,
-            items: []
+            items: [
+              {
+                text: '服务编排',
+                collapsed: true,
+                items: [
+                  {
+                    text: 'k8s',
+                    collapsed: true,
+                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/install`,
+                    items: [
+                      {
+                        text: '使用',
+                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/usage`,
+                      },
+                      {
+                        text: '配置',
+                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/config`,
+                      },
+                      {
+                        text: '问题排查',
+                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/problems`,
+                      }
+                    ]
+                  },
+                  {
+                    text: 'k9s',
+                    collapsed: true,
+                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k9s/setup`,
+                    items: [
+                      {
+                        text: '使用',
+                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k9s/usage`,
+                      }
+                    ]
+                  },
+                  {
+                    text: 'microk8s',
+                    collapsed: true,
+                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/microk8s/install`,
+                    items: [
+                      {
+                        text: '使用',
+                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/microk8s/usage`,
+                      }
+                    ]
+                  },
+                  {
+                    text: 'minikube',
+                    collapsed: true,
+                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/minikube/install`,
+                    items: []
+                  }
+                ]
+              }
+            ]
           },
           {
             text: '前端技术',
@@ -147,6 +236,7 @@ export default defineConfig({
       },
       {
         text: '编程基础',
+        collapsed: false,
         items: [
           {
             text: '设计模式',
@@ -191,6 +281,7 @@ export default defineConfig({
       },
       {
         text: '人工智能',
+        collapsed: false,
         items: [
           {
             text: '机器学习',
@@ -217,8 +308,14 @@ export default defineConfig({
       },
       {
         text: '研习录',
+        link: '/notes/study record/list',
         items: [
-          { text: '索引', link: '/notes/study record/list' }
+          {
+            text: '基础',
+            link: '/notes/study record/basic/index',
+            items: [
+            ]
+          }
         ]
       },
       {
