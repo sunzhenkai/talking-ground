@@ -22,7 +22,7 @@ export default defineConfig({
     sidebar: [
       {
         text: '我',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: '关于'
@@ -38,14 +38,14 @@ export default defineConfig({
       },
       {
         text: '折腾日记',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: '黑苹果',
             link: '/notes/play/os x/black apple',
             collapsed: true,
             items: [
-              { text: '安装', link: './install' },
+              { text: '安装', link: '/notes/play/os x/install' },
             ]
           },
           {
@@ -53,10 +53,10 @@ export default defineConfig({
             link: '/notes/play/rpi/config',
             collapsed: true,
             items: [
-              { text: 'gpio', link: './gpio' },
-              { text: '库', link: './librarys' },
-              { text: '硬件', link: './hardware' },
-              { text: '连接游戏手柄', link: './gamepad' },
+              { text: 'gpio', link: '/notes/play/rpi/gpio' },
+              { text: '库', link: '/notes/play/rpi/librarys' },
+              { text: '硬件', link: '/notes/play/rpi/hardware' },
+              { text: '连接游戏手柄', link: '/notes/play/rpi/gamepad' },
             ]
           },
           {
@@ -77,7 +77,7 @@ export default defineConfig({
                 text: 'Unraid', link: '/notes/play/unraid/usage', collapsed: true, items: [
                   {
                     text: 'docker',
-                    link: './dockers'
+                    link: '/notes/play/unraid/dockers'
                   }
                 ]
               }
@@ -151,11 +151,22 @@ export default defineConfig({
           {
             text: '设计模式',
             collapsed: true,
-            items: []
+            link: '/notes/basic programming/design pattern/startup',
+            items: [
+              {
+                text: '观察者模式',
+                link: '/notes/basic programming/design pattern/observer'
+              },
+              {
+                text: '总结',
+                link: '/notes/basic programming/design pattern/summary'
+              }
+            ]
           },
           {
             text: '数据结构',
             collapsed: true,
+            link: '/notes/basic programming/data structure/basic',
             items: []
           },
           {
@@ -166,8 +177,14 @@ export default defineConfig({
           {
             text: '语言',
             collapsed: true,
+            link: '/notes/basic programming/learn-lang',
             items: [
-              { text: 'C++', link: '/notes/basic programming/c++/notes/basic' }
+              { text: 'C++', link: '/notes/basic programming/c++/notes/basic' },
+              { text: 'Java', link: '/notes/basic programming/java' },
+              { text: 'Go', link: '/notes/basic programming/go/go' },
+              { text: 'Kotlin', link: '/notes/basic programming/kotlin/notes/basic' },
+              { text: 'Python', link: '/notes/basic programming/python/notes/common' },
+              { text: 'Scala', link: '/notes/basic programming/scala/basic' },
             ]
           }
         ]
@@ -188,7 +205,7 @@ export default defineConfig({
             link: '/notes/artificial intelligence/large language model/startup',
             collapsed: true,
             items: [
-              { text: '小试', link: './take' }
+              { text: '小试', link: '/notes/artificial intelligence/large language model/take' }
             ]
           },
           {
