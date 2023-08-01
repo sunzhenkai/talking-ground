@@ -1,5 +1,14 @@
 import { defineConfig } from 'vitepress'
 
+var links = {
+  text: '链接',
+  items: [
+    { text: '灵犀', link: 'https://exploring.fun' },
+    { text: '博客', link: 'https://wii.pub' },
+    { text: 'github', link: 'https://github.com/sunzhenkai' }
+  ]
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Wii's talking ground",
@@ -13,13 +22,66 @@ export default defineConfig({
     sidebar: [
       {
         text: '我',
-        collapsed: true,
+        collapsed: false,
         items: [
           {
             text: '关于'
           },
           {
             text: '经历'
+          },
+          {
+            ...links,
+            collapsed: true
+          }
+        ]
+      },
+      {
+        text: '折腾日记',
+        collapsed: false,
+        items: [
+          {
+            text: '黑苹果',
+            link: '/notes/play/os x/black apple',
+            collapsed: true,
+            items: [
+              { text: '安装', link: './install' },
+            ]
+          },
+          {
+            text: '树莓派',
+            link: '/notes/play/rpi/config',
+            collapsed: true,
+            items: [
+              { text: 'gpio', link: './gpio' },
+              { text: '库', link: './librarys' },
+              { text: '硬件', link: './hardware' },
+              { text: '连接游戏手柄', link: './gamepad' },
+            ]
+          },
+          {
+            text: '路由器',
+            collapsed: true,
+            items: [
+              { text: '华硕', link: 'notes/play/router/ausu' },
+              { text: 'Netgear', link: 'notes/play/router/netgear' },
+              { text: 'Openwrt', link: 'notes/play/router/openwrt' },
+              { text: '软路由', link: 'notes/play/router/soft-router' },
+            ]
+          },
+          {
+            text: 'All In One',
+            collapsed: true,
+            items: [
+              {
+                text: 'Unraid', link: '/notes/play/unraid/usage', collapsed: true, items: [
+                  {
+                    text: 'docker',
+                    link: './dockers'
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -105,7 +167,7 @@ export default defineConfig({
             text: '语言',
             collapsed: true,
             items: [
-              {text: 'C++', link: '/notes/basic programming/c++/notes/basic'}
+              { text: 'C++', link: '/notes/basic programming/c++/notes/basic' }
             ]
           }
         ]
@@ -166,14 +228,7 @@ export default defineConfig({
           }
         ]
       },
-      {
-        text: '链接',
-        items: [
-          { text: '灵犀', link: 'https://exploring.fun' },
-          { text: '博客', link: 'https://wii.pub' },
-          { text: 'github', link: 'https://github.com/sunzhenkai' }
-        ]
-      }
+      links
     ],
 
     socialLinks: [
