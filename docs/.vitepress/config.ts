@@ -28,10 +28,30 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
-            text: '关于'
+            text: '关于',
+            link: '/notes/about'
           },
           {
             text: '经历'
+          },
+          {
+            text: '分享',
+            collapsed: true,
+            items: [
+              {
+                text: '图书'
+              },
+              {
+                text: '音乐'
+              },
+              {
+                text: '电影'
+              }
+            ]
+          },
+          {
+            text: '待办',
+            link: '/notes/todo'
           },
           {
             ...links,
@@ -93,24 +113,20 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
-            text: '操作系统',
+            text: '计算机基础',
             collapsed: true,
-            items: []
-          },
-          {
-            text: '网络',
-            collapsed: true,
-            items: []
-          },
-          {
-            text: '软件工程',
-            collapsed: true,
-            items: []
-          },
-          {
-            text: '编译原理',
-            collapsed: true,
-            items: []
+            items: [
+              {
+                text: '操作系统',
+                collapsed: true,
+                items: []
+              },
+              {
+                text: '计算机网络',
+                collapsed: true,
+                items: []
+              }
+            ]
           },
           {
             text: '大数据',
@@ -120,7 +136,12 @@ export default defineConfig({
               {
                 text: '工具',
                 collapsed: true,
-                items: []
+                items: [
+                  {
+                    text: 'zeppelin',
+                    link: '/notes/computer science/big data/zeppelin/setup'
+                  }
+                ]
               }
             ]
           },
@@ -218,19 +239,40 @@ export default defineConfig({
             ]
           },
           {
-            text: '前端技术',
+            text: '其他',
             collapsed: true,
-            items: []
-          },
-          {
-            text: '搜索引擎',
-            collapsed: true,
-            items: []
-          },
-          {
-            text: '密码学',
-            collapsed: true,
-            items: []
+            items: [
+              {
+                text: '前端技术',
+                collapsed: true,
+                items: []
+              },
+              {
+                text: '搜索引擎',
+                collapsed: true,
+                items: []
+              },
+              {
+                text: '密码学',
+                collapsed: true,
+                items: []
+              },
+              {
+                text: '编译原理',
+                collapsed: true,
+                items: [
+                  {
+                    text: 'Flex & Bison',
+                    link: '/notes/computer science/fundamentals of compiling/flex-bison'
+                  }
+                ]
+              },
+              {
+                text: '软件工程',
+                collapsed: true,
+                items: []
+              }
+            ]
           }
         ]
       },
@@ -265,7 +307,7 @@ export default defineConfig({
             items: []
           },
           {
-            text: '语言',
+            text: '编程语言',
             collapsed: true,
             link: '/notes/basic programming/learn-lang',
             items: [
@@ -339,6 +381,9 @@ export default defineConfig({
                 link: 'https://vitepress.dev/'
               }
             ]
+          },
+          {
+            text: '图书'
           }
         ]
       },
