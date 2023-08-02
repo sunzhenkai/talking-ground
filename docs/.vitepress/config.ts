@@ -242,6 +242,16 @@ export default defineConfig({
                     items: []
                   }
                 ]
+              },
+              {
+                text: '数据收集',
+                collapsed: true,
+                items: [
+                  {
+                    text: 'vector',
+                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/data collector/vector`
+                  }
+                ]
               }
             ]
           },
