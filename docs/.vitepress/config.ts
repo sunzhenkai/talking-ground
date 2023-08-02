@@ -16,6 +16,7 @@ var ROOT_ENGINEERING_ARCHITECTURE = '/notes/computer science/engineering archite
 export default defineConfig({
   title: "Wii's talking ground",
   description: " ",
+  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -205,6 +206,12 @@ export default defineConfig({
                         link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/problems`,
                       }
                     ]
+                  },
+                  {
+                    text: 'helm',
+                    collapsed: true,
+                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/helm/helm`,
+                    items: []
                   },
                   {
                     text: 'k9s',
