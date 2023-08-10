@@ -69,11 +69,22 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
-            text: '黑苹果',
-            link: '/notes/play/os x/black apple',
+            text: '开发机',
             collapsed: true,
             items: [
-              { text: '安装', link: '/notes/play/os x/install' },
+              { text: '组装', link: '/notes/play/server/assembly' },
+              {
+                text: 'Openstack', collapsed: true, items: [
+                  { text: '安装', link: '/notes/computer science/computing/openstack/openstack' },
+                  { text: 'Trouble Shooting', link: '/notes/computer science/computing/openstack/problems' },
+                ]
+              },
+              {
+                text: 'Data Science', link: '/notes/play/server/data science/datascience', items: [
+                  { text: '文档', link: 'https://github.com/sunzhenkai/containers/tree/master/datascience' },
+                  { text: '访问', link: '/notes/play/server/data science/links' },
+                ]
+              }
             ]
           },
           {
@@ -95,6 +106,14 @@ export default defineConfig({
               { text: 'Netgear', link: 'notes/play/router/netgear' },
               { text: 'Openwrt', link: 'notes/play/router/openwrt' },
               { text: '软路由', link: 'notes/play/router/soft-router' },
+            ]
+          },
+          {
+            text: '黑苹果',
+            link: '/notes/play/os x/black apple',
+            collapsed: true,
+            items: [
+              { text: '安装', link: '/notes/play/os x/install' },
             ]
           },
           {
