@@ -76,11 +76,12 @@ export default defineConfig({
               {
                 text: 'Openstack', collapsed: true, items: [
                   { text: '安装', link: '/notes/computer science/computing/openstack/openstack' },
+                  { text: '配置多存储设备', link: '/notes/computer science/computing/openstack/multiple-backends' },
                   { text: 'Trouble Shooting', link: '/notes/computer science/computing/openstack/problems' },
                 ]
               },
               {
-                text: 'Data Science', link: '/notes/play/server/data science/datascience', items: [
+                text: 'Data Science', collapsed: true, link: '/notes/play/server/data science/datascience', items: [
                   { text: '文档', link: 'https://github.com/sunzhenkai/containers/tree/master/datascience' },
                   { text: '访问', link: '/notes/play/server/data science/links' },
                 ]
