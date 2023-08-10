@@ -25,6 +25,10 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: '序言',
+        link: '/notes/README'
+      },
+      {
         text: '我',
         collapsed: true,
         items: [
