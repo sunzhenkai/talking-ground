@@ -398,6 +398,16 @@ export default defineConfig({
             link: '/notes/study record/basic/index',
             items: [
             ]
+          },
+                    {
+            text: '英语',
+            collapsed: true,
+            items: [
+              {
+                text: '音标',
+                link: '/notes/study record/english/phonetic-symbol'
+              }
+            ]
           }
         ]
       },
