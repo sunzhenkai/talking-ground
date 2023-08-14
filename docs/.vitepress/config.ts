@@ -37,9 +37,6 @@ export default defineConfig({
             link: '/notes/about'
           },
           {
-            text: '经历'
-          },
-          {
             text: '分享',
             collapsed: true,
             items: [
