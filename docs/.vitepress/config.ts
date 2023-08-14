@@ -413,6 +413,7 @@ export default defineConfig({
         items: [
           { text: '人工智能', link: '/notes/artificial intelligence/favor' },
           { text: '机器学习', link: '/notes/artificial intelligence/applications/recommend system/favor' },
+          { text: '大数据', link: '/notes/computer science/big data/favor' },
           { text: '虚拟化', link: '/notes/computer science/virtualization technology/favor' },
           {
             text: '编程基础', collapsed: true, items: [
