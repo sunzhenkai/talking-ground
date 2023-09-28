@@ -12,6 +12,64 @@ var links = {
 var ROOT_VRITUALIZATION_TECHNOLOGY = '/notes/computer science/virtualization technology'
 var ROOT_ENGINEERING_ARCHITECTURE = '/notes/computer science/engineering architecture'
 
+var YAN_XI_LU = {
+  text: '研习录',
+  link: '/notes/study record/list',
+  items: [
+    {
+      text: '基础',
+      link: '/notes/study record/basic/index',
+      items: [
+      ]
+    },
+    {
+      text: '英语',
+      collapsed: true,
+      items: [
+        {
+          text: '音标',
+          link: '/notes/study record/english/phonetic-symbol'
+        }
+      ]
+    }
+  ]
+}
+
+var AI = {
+  text: '人工智能',
+  collapsed: false,
+  items: [
+    {
+      text: '机器学习',
+      link: '/notes/artificial intelligence/machine learning/notes/startup'
+    },
+    {
+      text: '深度学习',
+      link: '/notes/artificial intelligence/deep learning/notes/startup'
+    },
+    {
+      text: '大语言模型',
+      link: '/notes/artificial intelligence/large language model/startup',
+      collapsed: true,
+      items: [
+        { text: '小试', link: '/notes/artificial intelligence/large language model/take' }
+      ]
+    },
+    {
+      text: '应用', collapsed: true, items: [
+        {
+          text: '推荐系统', collapsed: true, link: '/notes/artificial intelligence/applications/recommend system/recommend-system.md', items: [
+            {
+              text: '广告推荐',
+              link: '/notes/artificial intelligence/applications/recommend system/advertising recommendations/ad.md'
+            }
+          ]
+        },
+      ]
+    },
+  ]
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Wii's talking ground",
@@ -359,55 +417,8 @@ export default defineConfig({
           }
         ]
       },
-      {
-        text: '人工智能',
-        collapsed: false,
-        items: [
-          {
-            text: '机器学习',
-            link: '/notes/artificial intelligence/machine learning/notes/startup'
-          },
-          {
-            text: '深度学习',
-            link: '/notes/artificial intelligence/deep learning/notes/startup'
-          },
-          {
-            text: '大语言模型',
-            link: '/notes/artificial intelligence/large language model/startup',
-            collapsed: true,
-            items: [
-              { text: '小试', link: '/notes/artificial intelligence/large language model/take' }
-            ]
-          },
-          {
-            text: '应用', collapsed: true, items: [
-              { text: '推荐系统', link: '' }
-            ]
-          },
-        ]
-      },
-      {
-        text: '研习录',
-        link: '/notes/study record/list',
-        items: [
-          {
-            text: '基础',
-            link: '/notes/study record/basic/index',
-            items: [
-            ]
-          },
-                    {
-            text: '英语',
-            collapsed: true,
-            items: [
-              {
-                text: '音标',
-                link: '/notes/study record/english/phonetic-symbol'
-              }
-            ]
-          }
-        ]
-      },
+      AI,
+      YAN_XI_LU,
       {
         text: '收藏',
         items: [
