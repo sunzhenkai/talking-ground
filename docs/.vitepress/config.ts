@@ -39,7 +39,14 @@ var AI = {
   items: [
     {
       text: '机器学习',
-      link: '/notes/artificial intelligence/machine learning/notes/startup'
+      link: '/notes/artificial intelligence/machine learning/notes/startup',
+      collapsed: true,
+      items: [
+        {
+          text: '特征工程',
+          link: '/notes/artificial intelligence/machine learning/feature engineering/startup'
+        }
+      ]
     },
     {
       text: '深度学习',
