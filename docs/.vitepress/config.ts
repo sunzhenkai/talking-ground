@@ -3,7 +3,8 @@ import { defineConfig } from 'vitepress'
 var ROOT_VRITUALIZATION_TECHNOLOGY = '/notes/computer science/virtualization technology'
 var ROOT_ENGINEERING_ARCHITECTURE = '/notes/computer science/engineering architecture'
 
-var LINKS = {
+// 链接
+const LINKS = {
   text: '链接',
   items: [
     { text: '灵犀', link: 'https://exploring.fun' },
@@ -11,7 +12,8 @@ var LINKS = {
     { text: 'github', link: 'https://github.com/sunzhenkai' }
   ]
 }
-var STUDY_RECORD = {
+// 研习录
+const STUDY_RECORD = {
   text: '研习录',
   link: '/notes/study record/list',
   items: [
@@ -33,7 +35,8 @@ var STUDY_RECORD = {
     }
   ]
 }
-var AI = {
+// 人工智能
+const AI = {
   text: '人工智能',
   collapsed: false,
   items: [
@@ -76,6 +79,201 @@ var AI = {
         },
       ]
     },
+  ]
+}
+// 计算机基础
+const CS = {
+  text: '计算机科学',
+  collapsed: false,
+  items: [
+    {
+      text: '计算机基础',
+      collapsed: true,
+      items: [
+        {
+          text: '操作系统',
+          collapsed: true,
+          items: [
+            {
+              text: '协程',
+              link: '/notes/computer science/operation system/coroutine'
+            }
+          ]
+        },
+        {
+          text: '计算机网络',
+          collapsed: true,
+          items: [
+            {
+              text: '基础',
+              link: '/notes/computer science/networking/networking'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      text: '大数据',
+      collapsed: true,
+      link: '/notes/computer science/big data/conceptions/big-data',
+      items: [
+        {
+          text: '工具',
+          collapsed: true,
+          items: [
+            {
+              text: 'zeppelin',
+              link: '/notes/computer science/big data/zeppelin/setup'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      text: '云计算',
+      collapsed: true,
+      items: []
+    },
+    {
+      text: '虚拟化',
+      collapsed: true,
+      items: [
+        {
+          text: 'docker',
+          link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/usage`,
+          collapsed: true,
+          items: [
+            {
+              text: '构建镜像',
+              link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/make-image`,
+            },
+            {
+              text: '常用容器',
+              link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/containers`,
+            },
+            {
+              text: '问题排查',
+              link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/problems`,
+            },
+            {
+              text: '示例',
+              link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/example`,
+            },
+          ]
+        }
+      ]
+    },
+    {
+      text: '工程架构',
+      collapsed: true,
+      items: [
+        {
+          text: '服务编排',
+          collapsed: true,
+          items: [
+            {
+              text: 'k8s',
+              collapsed: true,
+              link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/install`,
+              items: [
+                {
+                  text: '使用',
+                  link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/usage`,
+                },
+                {
+                  text: '配置',
+                  link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/config`,
+                },
+                {
+                  text: '问题排查',
+                  link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/problems`,
+                }
+              ]
+            },
+            {
+              text: 'helm',
+              collapsed: true,
+              link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/helm/helm`,
+              items: []
+            },
+            {
+              text: 'k9s',
+              collapsed: true,
+              link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k9s/setup`,
+              items: [
+                {
+                  text: '使用',
+                  link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k9s/usage`,
+                }
+              ]
+            },
+            {
+              text: 'microk8s',
+              collapsed: true,
+              link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/microk8s/install`,
+              items: [
+                {
+                  text: '使用',
+                  link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/microk8s/usage`,
+                }
+              ]
+            },
+            {
+              text: 'minikube',
+              collapsed: true,
+              link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/minikube/install`,
+              items: []
+            }
+          ]
+        },
+        {
+          text: '数据收集',
+          collapsed: true,
+          items: [
+            {
+              text: 'vector',
+              link: `${ROOT_ENGINEERING_ARCHITECTURE}/data collector/vector`
+            }
+          ]
+        }
+      ]
+    },
+    {
+      text: '其他',
+      collapsed: true,
+      items: [
+        {
+          text: '前端技术',
+          collapsed: true,
+          items: []
+        },
+        {
+          text: '搜索引擎',
+          collapsed: true,
+          items: []
+        },
+        {
+          text: '密码学',
+          collapsed: true,
+          items: []
+        },
+        {
+          text: '编译原理',
+          collapsed: true,
+          items: [
+            {
+              text: 'Flex & Bison',
+              link: '/notes/computer science/fundamentals of compiling/flex-bison'
+            }
+          ]
+        },
+        {
+          text: '软件工程',
+          collapsed: true,
+          items: []
+        }
+      ]
+    }
   ]
 }
 
@@ -204,190 +402,7 @@ export default defineConfig({
           }
         ]
       },
-      {
-        text: '计算机科学',
-        collapsed: false,
-        items: [
-          {
-            text: '计算机基础',
-            collapsed: true,
-            items: [
-              {
-                text: '操作系统',
-                collapsed: true,
-                items: []
-              },
-              {
-                text: '计算机网络',
-                collapsed: true,
-                items: []
-              }
-            ]
-          },
-          {
-            text: '大数据',
-            collapsed: true,
-            link: '/notes/computer science/big data/conceptions/big-data',
-            items: [
-              {
-                text: '工具',
-                collapsed: true,
-                items: [
-                  {
-                    text: 'zeppelin',
-                    link: '/notes/computer science/big data/zeppelin/setup'
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            text: '云计算',
-            collapsed: true,
-            items: []
-          },
-          {
-            text: '虚拟化',
-            collapsed: true,
-            items: [
-              {
-                text: 'docker',
-                link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/usage`,
-                collapsed: true,
-                items: [
-                  {
-                    text: '构建镜像',
-                    link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/make-image`,
-                  },
-                  {
-                    text: '常用容器',
-                    link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/containers`,
-                  },
-                  {
-                    text: '问题排查',
-                    link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/problems`,
-                  },
-                  {
-                    text: '示例',
-                    link: `${ROOT_VRITUALIZATION_TECHNOLOGY}/docker/example`,
-                  },
-                ]
-              }
-            ]
-          },
-          {
-            text: '工程架构',
-            collapsed: true,
-            items: [
-              {
-                text: '服务编排',
-                collapsed: true,
-                items: [
-                  {
-                    text: 'k8s',
-                    collapsed: true,
-                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/install`,
-                    items: [
-                      {
-                        text: '使用',
-                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/usage`,
-                      },
-                      {
-                        text: '配置',
-                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/config`,
-                      },
-                      {
-                        text: '问题排查',
-                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k8s/problems`,
-                      }
-                    ]
-                  },
-                  {
-                    text: 'helm',
-                    collapsed: true,
-                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/helm/helm`,
-                    items: []
-                  },
-                  {
-                    text: 'k9s',
-                    collapsed: true,
-                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k9s/setup`,
-                    items: [
-                      {
-                        text: '使用',
-                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/k9s/usage`,
-                      }
-                    ]
-                  },
-                  {
-                    text: 'microk8s',
-                    collapsed: true,
-                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/microk8s/install`,
-                    items: [
-                      {
-                        text: '使用',
-                        link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/microk8s/usage`,
-                      }
-                    ]
-                  },
-                  {
-                    text: 'minikube',
-                    collapsed: true,
-                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/minikube/install`,
-                    items: []
-                  }
-                ]
-              },
-              {
-                text: '数据收集',
-                collapsed: true,
-                items: [
-                  {
-                    text: 'vector',
-                    link: `${ROOT_ENGINEERING_ARCHITECTURE}/data collector/vector`
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            text: '其他',
-            collapsed: true,
-            items: [
-              {
-                text: '前端技术',
-                collapsed: true,
-                items: []
-              },
-              {
-                text: '搜索引擎',
-                collapsed: true,
-                items: []
-              },
-              {
-                text: '密码学',
-                collapsed: true,
-                items: []
-              },
-              {
-                text: '编译原理',
-                collapsed: true,
-                items: [
-                  {
-                    text: 'Flex & Bison',
-                    link: '/notes/computer science/fundamentals of compiling/flex-bison'
-                  }
-                ]
-              },
-              {
-                text: '软件工程',
-                collapsed: true,
-                items: []
-              }
-            ]
-          }
-        ]
-      },
+      CS,
       {
         text: '编程基础',
         collapsed: false,
