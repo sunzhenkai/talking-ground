@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
 
-var links = {
+var ROOT_VRITUALIZATION_TECHNOLOGY = '/notes/computer science/virtualization technology'
+var ROOT_ENGINEERING_ARCHITECTURE = '/notes/computer science/engineering architecture'
+
+var LINKS = {
   text: '链接',
   items: [
     { text: '灵犀', link: 'https://exploring.fun' },
@@ -8,11 +11,7 @@ var links = {
     { text: 'github', link: 'https://github.com/sunzhenkai' }
   ]
 }
-
-var ROOT_VRITUALIZATION_TECHNOLOGY = '/notes/computer science/virtualization technology'
-var ROOT_ENGINEERING_ARCHITECTURE = '/notes/computer science/engineering architecture'
-
-var YAN_XI_LU = {
+var STUDY_RECORD = {
   text: '研习录',
   link: '/notes/study record/list',
   items: [
@@ -34,7 +33,6 @@ var YAN_XI_LU = {
     }
   ]
 }
-
 var AI = {
   text: '人工智能',
   collapsed: false,
@@ -58,10 +56,14 @@ var AI = {
     {
       text: '应用', collapsed: true, items: [
         {
-          text: '推荐系统', collapsed: true, link: '/notes/artificial intelligence/applications/recommend system/recommend-system.md', items: [
+          text: '推荐系统', collapsed: true, link: '/notes/artificial intelligence/applications/recommend system/recommend-system', items: [
             {
               text: '广告推荐',
-              link: '/notes/artificial intelligence/applications/recommend system/advertising recommendations/ad.md'
+              link: '/notes/artificial intelligence/applications/recommend system/advertising recommendations/ad'
+            },
+            {
+              text: '个性化召回',
+              link: '/notes/artificial intelligence/applications/recommend system/personalized recall/recall'
             }
           ]
         },
@@ -114,7 +116,7 @@ export default defineConfig({
             link: '/notes/todo'
           },
           {
-            ...links,
+            ...LINKS,
             collapsed: true
           }
         ]
@@ -418,7 +420,7 @@ export default defineConfig({
         ]
       },
       AI,
-      YAN_XI_LU,
+      STUDY_RECORD,
       {
         text: '收藏',
         items: [
@@ -447,7 +449,7 @@ export default defineConfig({
           }
         ]
       },
-      links
+      LINKS
     ],
 
     socialLinks: [
