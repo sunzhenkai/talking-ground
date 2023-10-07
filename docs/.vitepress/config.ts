@@ -101,13 +101,20 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: '图书'
+                text: '图书',
+                link: '/notes/others/share/books'
               },
               {
-                text: '音乐'
+                text: '音乐',
+                link: '/notes/others/share/musics'
               },
               {
-                text: '电影'
+                text: '电影',
+                link: '/notes/others/share/movies'
+              },
+              {
+                text: '电视剧',
+                link: '/notes/others/share/tvs'
               }
             ]
           },
