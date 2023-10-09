@@ -32,7 +32,12 @@ const STUDY_RECORD = {
           link: '/notes/study record/english/phonetic-symbol'
         }
       ]
-    }
+    },
+    {
+      text: '读书',
+      items: [
+      ]
+    },
   ]
 }
 // 人工智能
@@ -276,6 +281,48 @@ const CS = {
     }
   ]
 }
+// 收藏
+const FAVOR = {
+  text: '收藏',
+  items: [
+    { text: '人工智能', link: '/notes/artificial intelligence/favor' },
+    { text: '机器学习', link: '/notes/artificial intelligence/applications/recommend system/favor' },
+    { text: '大数据', link: '/notes/computer science/big data/favor' },
+    { text: '虚拟化', link: '/notes/computer science/virtualization technology/favor' },
+    {
+      text: '编程基础', collapsed: true, items: [
+        { text: 'C++', link: '/notes/basic programming/c++/favor' }
+      ]
+    },
+    {
+      text: '工具',
+      collapsed: true,
+      link: '/notes/tools/favor',
+      items: [
+        {
+          text: 'vitepress',
+          link: 'https://vitepress.dev/'
+        }
+      ]
+    },
+    {
+      text: '图书'
+    }
+  ]
+}
+// 碎碎念
+const THOUGHTS = {
+  text: '碎碎念',
+  link: '/notes/others/thoughts/thoughts',
+  items: [
+    { text: '2023', collapsed: true, items: [
+      {
+        text: '10.09 - 放下执念',
+        link: '/notes/others/thoughts/2023/20231009'  
+      }
+    ] }
+  ]
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -449,35 +496,9 @@ export default defineConfig({
         ]
       },
       AI,
+      FAVOR,
       STUDY_RECORD,
-      {
-        text: '收藏',
-        items: [
-          { text: '人工智能', link: '/notes/artificial intelligence/favor' },
-          { text: '机器学习', link: '/notes/artificial intelligence/applications/recommend system/favor' },
-          { text: '大数据', link: '/notes/computer science/big data/favor' },
-          { text: '虚拟化', link: '/notes/computer science/virtualization technology/favor' },
-          {
-            text: '编程基础', collapsed: true, items: [
-              { text: 'C++', link: '/notes/basic programming/c++/favor' }
-            ]
-          },
-          {
-            text: '工具',
-            collapsed: true,
-            link: '/notes/tools/favor',
-            items: [
-              {
-                text: 'vitepress',
-                link: 'https://vitepress.dev/'
-              }
-            ]
-          },
-          {
-            text: '图书'
-          }
-        ]
-      },
+      THOUGHTS,
       LINKS
     ],
 
