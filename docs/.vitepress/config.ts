@@ -39,8 +39,12 @@ const ME = {
           link: '/notes/others/share/movies'
         },
         {
-          text: '电视剧',
+          text: '电视',
           link: '/notes/others/share/tvs'
+        },
+        {
+          text: '避坑',
+          link: '/notes/others/share/warn'
         }
       ]
     },
