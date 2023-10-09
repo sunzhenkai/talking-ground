@@ -12,6 +12,48 @@ const LINKS = {
     { text: 'github', link: 'https://github.com/sunzhenkai' }
   ]
 }
+// 我
+const ME = {
+  text: '我',
+  collapsed: true,
+  items: [
+    {
+      text: '关于',
+      link: '/notes/about'
+    },
+    {
+      text: '分享',
+      link: '/notes/others/share/other',
+      collapsed: true,
+      items: [
+        {
+          text: '图书',
+          link: '/notes/others/share/books'
+        },
+        {
+          text: '音乐',
+          link: '/notes/others/share/musics'
+        },
+        {
+          text: '电影',
+          link: '/notes/others/share/movies'
+        },
+        {
+          text: '电视剧',
+          link: '/notes/others/share/tvs'
+        }
+      ]
+    },
+    {
+      text: '待办',
+      link: '/notes/todo'
+    },
+    {
+      ...LINKS,
+      collapsed: true
+    }
+  ]
+}
 // 研习录
 const STUDY_RECORD = {
   text: '研习录',
@@ -35,7 +77,18 @@ const STUDY_RECORD = {
     },
     {
       text: '读书',
+      collapsed: true,
       items: [
+        {
+          text: '技术',
+          collapsed: true,
+          items: [
+            {
+              text: '信息流广告入门',
+              link: '/notes/study record/reading/xxlggrm'
+            }
+          ]
+        }
       ]
     },
   ]
@@ -340,46 +393,7 @@ export default defineConfig({
         text: '序言',
         link: '/notes/README'
       },
-      {
-        text: '我',
-        collapsed: true,
-        items: [
-          {
-            text: '关于',
-            link: '/notes/about'
-          },
-          {
-            text: '分享',
-            collapsed: true,
-            items: [
-              {
-                text: '图书',
-                link: '/notes/others/share/books'
-              },
-              {
-                text: '音乐',
-                link: '/notes/others/share/musics'
-              },
-              {
-                text: '电影',
-                link: '/notes/others/share/movies'
-              },
-              {
-                text: '电视剧',
-                link: '/notes/others/share/tvs'
-              }
-            ]
-          },
-          {
-            text: '待办',
-            link: '/notes/todo'
-          },
-          {
-            ...LINKS,
-            collapsed: true
-          }
-        ]
-      },
+      ME,
       {
         text: '折腾日记',
         collapsed: true,
