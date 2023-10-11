@@ -43,14 +43,16 @@ const ME = {
           link: '/notes/others/share/tvs'
         },
         {
-          text: '避坑',
-          link: '/notes/others/share/warn'
+          text: '其他',
+          collapsed: true,
+          items: [
+            {
+              text: '避坑',
+              link: '/notes/others/share/warn'
+            }
+          ]
         }
       ]
-    },
-    {
-      text: '待办',
-      link: '/notes/todo'
     },
     {
       ...LINKS,
@@ -299,6 +301,18 @@ const CS = {
           ]
         }
       ]
+    }, {
+      text: '软件工程',
+      collapsed: true,
+      items: [
+        {
+          text: '类图',
+          link: '/notes/computer science/software engineering/classdiagram'
+        }, {
+          text: 'DDD',
+          link: '/notes/computer science/software engineering/ddd'
+        }
+      ]
     },
     {
       text: '其他',
@@ -328,11 +342,6 @@ const CS = {
               link: '/notes/computer science/fundamentals of compiling/flex-bison'
             }
           ]
-        },
-        {
-          text: '软件工程',
-          collapsed: true,
-          items: []
         }
       ]
     }
@@ -372,12 +381,14 @@ const THOUGHTS = {
   text: '碎碎念',
   link: '/notes/others/thoughts/thoughts',
   items: [
-    { text: '2023', collapsed: true, items: [
-      {
-        text: '10.09 - 放下执念',
-        link: '/notes/others/thoughts/2023/20231009'  
-      }
-    ] }
+    {
+      text: '2023', collapsed: true, items: [
+        {
+          text: '10.09 - 放下执念',
+          link: '/notes/others/thoughts/2023/20231009'
+        }
+      ]
+    }
   ]
 }
 
