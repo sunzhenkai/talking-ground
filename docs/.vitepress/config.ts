@@ -285,7 +285,7 @@ const CS = {
             {
               text: 'minikube',
               collapsed: true,
-              link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/minikube/install`,
+              link: `${ROOT_ENGINEERING_ARCHITECTURE}/service orchestration/minikube/usage`,
               items: []
             }
           ]
