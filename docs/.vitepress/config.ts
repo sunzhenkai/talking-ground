@@ -384,7 +384,7 @@ const THOUGHTS = {
     {
       text: '2023', collapsed: true, items: [
         {
-          text: '10.13 - 车快到了',
+          text: '10.13 - 订的车快到了',
           link: '/notes/others/thoughts/2023/20231013'
         },
         {
