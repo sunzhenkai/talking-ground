@@ -47,6 +47,14 @@ const ME = {
           collapsed: true,
           items: [
             {
+              text: '行车安全',
+              link: '/notes/others/share/car-drive'
+            },
+            {
+              text: '车载好物',
+              link: '/notes/others/share/car-goods'
+            },
+            {
               text: '避坑',
               link: '/notes/others/share/warn'
             }
@@ -518,7 +526,13 @@ export default defineConfig({
             collapsed: true,
             link: '/notes/basic programming/learn-lang',
             items: [
-              { text: 'C++', link: '/notes/basic programming/c++/notes/basic' },
+              { text: 'C++', link: '/notes/basic programming/c++/notes/basic', items: [
+                {
+                  text: '快速查阅手册',
+                  collapsed: true,
+                  link: '/notes/basic programming/c++/notes/basic-simple'
+                }
+              ]},
               { text: 'Java', link: '/notes/basic programming/java' },
               { text: 'Go', link: '/notes/basic programming/go/go' },
               { text: 'Kotlin', link: '/notes/basic programming/kotlin/notes/basic' },
