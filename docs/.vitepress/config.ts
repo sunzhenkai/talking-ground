@@ -392,6 +392,14 @@ const THOUGHTS = {
     {
       text: '2023', collapsed: true, items: [
         {
+          text: '11.02 - 无知有两种',
+          link: '/notes/others/thoughts/2023/20231102'
+        },
+        {
+          text: '10.23 - 提车了',
+          link: '/notes/others/thoughts/2023/20231023'
+        },
+        {
           text: '10.13 - 订的车快到了',
           link: '/notes/others/thoughts/2023/20231013'
         },
