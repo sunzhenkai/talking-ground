@@ -392,6 +392,18 @@ const THOUGHTS = {
     {
       text: '2023', collapsed: true, items: [
         {
+          text: '12.23 - 想说说为什么活着',
+          link: '/notes/others/thoughts/2023/20231223'
+        },
+        {
+          text: '12.11 - 看到一个关于房地产的视频',
+          link: '/notes/others/thoughts/2023/20231211'
+        },
+        {
+          text: '11.02 - 无知有两种',
+          link: '/notes/others/thoughts/2023/20231102'
+        },
+        {
           text: '11.02 - 无知有两种',
           link: '/notes/others/thoughts/2023/20231102'
         },
