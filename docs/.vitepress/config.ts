@@ -396,7 +396,7 @@ const THOUGHTS = {
           link: '/notes/others/thoughts/2023/20231223'
         },
         {
-          text: '12.11 - 看到一个关于房地产的视频',
+          text: '12.11 - 关于房地产的视频',
           link: '/notes/others/thoughts/2023/20231211'
         },
         {
