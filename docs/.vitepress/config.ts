@@ -23,27 +23,27 @@ const QUICK_ACCESS = {
       items: [
         {
           text: 'vim',
-          link: '/tools/vim/tips'
+          link: '/notes/tools/vim/tips'
         }, 
         {
           text: 'tmux',
-          link: '/tools/tmux/usage'
+          link: '/notes/tools/tmux/usage'
         }, 
         {
           text: 'linux',
-          link: '/computer science/linux/notes/usage'
+          link: '/notes/computer science/linux/notes/usage'
         }, 
         {
           text: 'sed',
-          link: '/computer science/linux/program/sed'
+          link: '/notes/computer science/linux/program/sed'
         }, 
         {
           text: 'awk',
-          link: '/computer science/linux/program/awk'
+          link: '/notes/computer science/linux/program/awk'
         }, 
         {
           text: 'docker',
-          link: '/computer science/virtualization technology/docker/usage'
+          link: '/notes/computer science/virtualization technology/docker/usage'
         }
       ]
     }
