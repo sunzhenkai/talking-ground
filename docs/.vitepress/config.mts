@@ -547,6 +547,77 @@ const THOUGHTS = {
   ]
 }
 
+const SIDEBAR = [
+  {
+    text: '序言',
+    link: '/notes/README'
+  },
+  ME,
+  PLAY,
+  QUICK_ACCESS,
+  CS,
+  {
+    text: '编程基础',
+    collapsed: false,
+    items: [
+      {
+        text: '设计模式',
+        collapsed: true,
+        link: '/notes/basic programming/design pattern/startup',
+        items: [
+          {
+            text: '观察者模式',
+            link: '/notes/basic programming/design pattern/observer'
+          },
+          {
+            text: '总结',
+            link: '/notes/basic programming/design pattern/summary'
+          }
+        ]
+      },
+      {
+        text: '数据结构',
+        collapsed: true,
+        link: '/notes/basic programming/data structure/basic',
+        items: []
+      },
+      {
+        text: '编程算法',
+        collapsed: true,
+        items: []
+      },
+      {
+        text: '编程语言',
+        collapsed: true,
+        link: '/notes/basic programming/learn-lang',
+        items: [
+          { text: 'C++', link: '/notes/basic programming/c++/notes/basic', items: [
+            {
+              text: '快速查阅手册',
+              collapsed: true,
+              link: '/notes/basic programming/c++/notes/basic-simple'
+            }
+          ]},
+          { text: 'Java', link: '/notes/basic programming/java' },
+          { text: 'Go', link: '/notes/basic programming/go/go' },
+          { text: 'Kotlin', link: '/notes/basic programming/kotlin/notes/basic' },
+          { text: 'Python', link: '/notes/basic programming/python/notes/common' },
+          { text: 'Scala', link: '/notes/basic programming/scala/basic' },
+        ]
+      }
+    ]
+  },
+  AI,
+  FAVOR,
+  STUDY_RECORD,
+  THOUGHTS,
+  LINKS
+];
+
+const SOCIAL_LINKS = [
+  { icon: 'github', link: 'https://github.com/sunzhenkai/talking-ground' }
+]
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Wii's talking ground",
@@ -557,78 +628,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
     ],
-
-    sidebar: [
-      {
-        text: '序言',
-        link: '/notes/README'
-      },
-      ME,
-      PLAY,
-      QUICK_ACCESS,
-      CS,
-      {
-        text: '编程基础',
-        collapsed: false,
-        items: [
-          {
-            text: '设计模式',
-            collapsed: true,
-            link: '/notes/basic programming/design pattern/startup',
-            items: [
-              {
-                text: '观察者模式',
-                link: '/notes/basic programming/design pattern/observer'
-              },
-              {
-                text: '总结',
-                link: '/notes/basic programming/design pattern/summary'
-              }
-            ]
-          },
-          {
-            text: '数据结构',
-            collapsed: true,
-            link: '/notes/basic programming/data structure/basic',
-            items: []
-          },
-          {
-            text: '编程算法',
-            collapsed: true,
-            items: []
-          },
-          {
-            text: '编程语言',
-            collapsed: true,
-            link: '/notes/basic programming/learn-lang',
-            items: [
-              { text: 'C++', link: '/notes/basic programming/c++/notes/basic', items: [
-                {
-                  text: '快速查阅手册',
-                  collapsed: true,
-                  link: '/notes/basic programming/c++/notes/basic-simple'
-                }
-              ]},
-              { text: 'Java', link: '/notes/basic programming/java' },
-              { text: 'Go', link: '/notes/basic programming/go/go' },
-              { text: 'Kotlin', link: '/notes/basic programming/kotlin/notes/basic' },
-              { text: 'Python', link: '/notes/basic programming/python/notes/common' },
-              { text: 'Scala', link: '/notes/basic programming/scala/basic' },
-            ]
-          }
-        ]
-      },
-      AI,
-      FAVOR,
-      STUDY_RECORD,
-      THOUGHTS,
-      LINKS
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/sunzhenkai/talking-ground' }
-    ],
-
+    sidebar: SIDEBAR,
+    socialLinks: SOCIAL_LINKS,
     footer: {
       message: '+',
     }
