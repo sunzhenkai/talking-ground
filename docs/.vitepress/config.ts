@@ -19,7 +19,7 @@ const QUICK_ACCESS = {
   items: [
     {
       text: '常用工具',
-      collapased: true,
+      collapased: false,
       items: [
         {
           text: 'vim',
