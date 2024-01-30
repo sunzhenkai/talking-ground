@@ -44,7 +44,13 @@ const QUICK_ACCESS = {
         {
           text: 'docker',
           link: '/notes/computer science/virtualization technology/docker/usage'
-        }, 
+        }
+      ]
+    },   
+    {
+      text: '编程基础',
+      collapased: false,
+      items: [
         {
           text: 'shell',
           link: '/notes/basic programming/shell/basic'
