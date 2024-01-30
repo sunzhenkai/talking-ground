@@ -12,6 +12,40 @@ const LINKS = {
     { text: 'github', link: 'https://github.com/sunzhenkai' }
   ]
 }
+// 快捷访问
+const QUICK_ACCESS = {
+  text: '我',
+  collapsed: true,
+  items: [
+    {
+      text: '常用工具',
+      collapased: true,
+      items: [
+        {
+          text: 'vim',
+          link: '/tools/vim/tips'
+        }, 
+        {
+          text: 'tmux',
+          link: '/tools/tmux/usage'
+        }, 
+        {
+          text: 'linux',
+          link: '/computer science/linux/notes/usage'
+        }, 
+        {
+          text: 'sed',
+          link: '/computer science/linux/program/sed'
+        }, 
+        {
+          text: 'awk',
+          link: '/computer science/linux/program/awk'
+        }
+      ]
+    }
+  ]
+}
+
 // 我
 const ME = {
   text: '我',
