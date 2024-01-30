@@ -40,6 +40,10 @@ const QUICK_ACCESS = {
         {
           text: 'awk',
           link: '/computer science/linux/program/awk'
+        }, 
+        {
+          text: 'docker',
+          link: '/computer science/virtualization technology/docker/usage'
         }
       ]
     }
