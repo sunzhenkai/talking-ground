@@ -14,7 +14,7 @@ const LINKS = {
 }
 // 快捷访问
 const QUICK_ACCESS = {
-  text: '我',
+  text: '快速访问',
   collapsed: true,
   items: [
     {
@@ -102,6 +102,77 @@ const ME = {
     }
   ]
 }
+// 折腾日记
+const PLAY = {
+  text: '折腾日记',
+  collapsed: true,
+  items: [
+    {
+      text: '开发机',
+      collapsed: true,
+      items: [
+        { text: '组装', link: '/notes/play/server/assembly' },
+        {
+          text: 'Openstack', collapsed: true, items: [
+            { text: '安装', link: '/notes/computer science/computing/openstack/openstack' },
+            { text: '配置多存储设备', link: '/notes/computer science/computing/openstack/multiple-backends' },
+            { text: 'Trouble Shooting', link: '/notes/computer science/computing/openstack/problems' },
+          ]
+        },
+        {
+          text: 'Data Science', collapsed: true, link: '/notes/play/server/data science/datascience', items: [
+            { text: '文档', link: 'https://github.com/sunzhenkai/containers/tree/master/datascience' },
+            { text: '访问', link: '/notes/play/server/data science/links' },
+          ]
+        }
+      ]
+    },
+    {
+      text: '树莓派',
+      link: '/notes/play/rpi/config',
+      collapsed: true,
+      items: [
+        { text: 'gpio', link: '/notes/play/rpi/gpio' },
+        { text: '库', link: '/notes/play/rpi/librarys' },
+        { text: '硬件', link: '/notes/play/rpi/hardware' },
+        { text: '连接游戏手柄', link: '/notes/play/rpi/gamepad' },
+      ]
+    },
+    {
+      text: '路由器',
+      collapsed: true,
+      items: [
+        { text: '华硕', link: 'notes/play/router/ausu' },
+        { text: 'Netgear', link: 'notes/play/router/netgear' },
+        { text: 'Openwrt', link: 'notes/play/router/openwrt' },
+        { text: '软路由', link: 'notes/play/router/soft-router' },
+      ]
+    },
+    {
+      text: '黑苹果',
+      link: '/notes/play/os x/black apple',
+      collapsed: true,
+      items: [
+        { text: '安装', link: '/notes/play/os x/install' },
+      ]
+    },
+    {
+      text: 'All In One',
+      collapsed: true,
+      items: [
+        {
+          text: 'Unraid', link: '/notes/play/unraid/usage', collapsed: true, items: [
+            {
+              text: 'docker',
+              link: '/notes/play/unraid/dockers'
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
 // 研习录
 const STUDY_RECORD = {
   text: '研习录',
@@ -471,75 +542,8 @@ export default defineConfig({
         link: '/notes/README'
       },
       ME,
-      {
-        text: '折腾日记',
-        collapsed: true,
-        items: [
-          {
-            text: '开发机',
-            collapsed: true,
-            items: [
-              { text: '组装', link: '/notes/play/server/assembly' },
-              {
-                text: 'Openstack', collapsed: true, items: [
-                  { text: '安装', link: '/notes/computer science/computing/openstack/openstack' },
-                  { text: '配置多存储设备', link: '/notes/computer science/computing/openstack/multiple-backends' },
-                  { text: 'Trouble Shooting', link: '/notes/computer science/computing/openstack/problems' },
-                ]
-              },
-              {
-                text: 'Data Science', collapsed: true, link: '/notes/play/server/data science/datascience', items: [
-                  { text: '文档', link: 'https://github.com/sunzhenkai/containers/tree/master/datascience' },
-                  { text: '访问', link: '/notes/play/server/data science/links' },
-                ]
-              }
-            ]
-          },
-          {
-            text: '树莓派',
-            link: '/notes/play/rpi/config',
-            collapsed: true,
-            items: [
-              { text: 'gpio', link: '/notes/play/rpi/gpio' },
-              { text: '库', link: '/notes/play/rpi/librarys' },
-              { text: '硬件', link: '/notes/play/rpi/hardware' },
-              { text: '连接游戏手柄', link: '/notes/play/rpi/gamepad' },
-            ]
-          },
-          {
-            text: '路由器',
-            collapsed: true,
-            items: [
-              { text: '华硕', link: 'notes/play/router/ausu' },
-              { text: 'Netgear', link: 'notes/play/router/netgear' },
-              { text: 'Openwrt', link: 'notes/play/router/openwrt' },
-              { text: '软路由', link: 'notes/play/router/soft-router' },
-            ]
-          },
-          {
-            text: '黑苹果',
-            link: '/notes/play/os x/black apple',
-            collapsed: true,
-            items: [
-              { text: '安装', link: '/notes/play/os x/install' },
-            ]
-          },
-          {
-            text: 'All In One',
-            collapsed: true,
-            items: [
-              {
-                text: 'Unraid', link: '/notes/play/unraid/usage', collapsed: true, items: [
-                  {
-                    text: 'docker',
-                    link: '/notes/play/unraid/dockers'
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
+      PLAY,
+      QUICK_ACCESS,
       CS,
       {
         text: '编程基础',
