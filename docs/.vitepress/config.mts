@@ -519,6 +519,10 @@ const THOUGHTS = {
     {
       text: '2024', collapsed: true, items: [
         {
+          text: '02.18 - 成长公式',
+          link: '/notes/others/thoughts/2024/20240218-2'
+        },
+        {
           text: '02.18 - 新的一年',
           link: '/notes/others/thoughts/2024/20240218'
         },
