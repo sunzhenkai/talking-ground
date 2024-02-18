@@ -543,6 +543,18 @@ const THOUGHTS = {
           link: '/notes/others/thoughts/2023/20231009'
         }
       ]
+    },
+    {
+      text: '2024', collapsed: true, items: [
+        {
+          text: '02.04 - 卢克文的《一个人是怎样成长起来的？》',
+          link: '/notes/others/thoughts/2024/20240204'
+        },
+        {
+          text: '02.18 - 新的一年',
+          link: '/notes/others/thoughts/2024/20240218'
+        }
+      ]
     }
   ]
 }
