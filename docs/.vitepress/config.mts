@@ -647,7 +647,7 @@ export default defineConfig({
     sidebar: SIDEBAR,
     socialLinks: SOCIAL_LINKS,
     footer: {
-      message: '待你大器初成时，山城无处不飞花<br\>九州内外风云起，天下谁人不识君',
+      message: '凡事预则立 不预则废',
     }
   }
 })
