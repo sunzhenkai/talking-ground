@@ -67,7 +67,6 @@ const QUICK_ACCESS = {
     }
   ]
 }
-
 // 我
 const ME = {
   text: '我',
@@ -194,7 +193,6 @@ const PLAY = {
     }
   ]
 }
-
 // 研习录
 const STUDY_RECORD = {
   text: '研习录',
@@ -566,7 +564,6 @@ const THOUGHTS = {
     }
   ]
 }
-
 const SIDEBAR = [
   {
     text: '序言',
@@ -633,7 +630,6 @@ const SIDEBAR = [
   THOUGHTS,
   LINKS
 ];
-
 const SOCIAL_LINKS = [
   { icon: 'github', link: 'https://github.com/sunzhenkai/talking-ground' }
 ]
@@ -641,7 +637,7 @@ const SOCIAL_LINKS = [
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Wii's talking ground",
-  description: " ",
+  description: "Various Topics",
   ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -651,7 +647,7 @@ export default defineConfig({
     sidebar: SIDEBAR,
     socialLinks: SOCIAL_LINKS,
     footer: {
-      message: '+',
+      message: '待你大器初成时，山城无处不飞花<br\>九州内外风云起，天下谁人不识君',
     }
   }
 })
