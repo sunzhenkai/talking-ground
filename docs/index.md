@@ -21,10 +21,10 @@ hero:
       link: https://exploring.fun
 features:
   - icon: 💭
-    title: Thoughts
+    title: Thinking
     details: 
   - icon: 💬
-    title: Interaction
+    title: Interacting
   - icon: 📚
     title: Learning
     details: 
