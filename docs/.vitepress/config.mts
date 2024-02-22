@@ -193,6 +193,63 @@ const PLAY = {
     }
   ]
 }
+// 工具
+const TOOLS = {
+  text: '工具',
+  collapsed: true,
+  items: [
+    {
+      text: 'bazel',
+      collapsed: true,
+      items: [
+        { text: '安装', link: '/notes/tools/bazel/bazel' },
+        { text: '依赖', link: '/notes/tools/bazel/deps' },
+        { text: '使用', link: '/notes/tools/bazel/usage' }
+      ]
+    },
+    {
+      text: 'brew',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/brew/usage' },
+        { text: 'Ubuntu', link: '/notes/tools/brew/ubuntu-brew' },
+      ]
+    },
+    {
+      text: 'charles',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/charles/usage' },
+      ]
+    },
+    {
+      text: 'cmake',
+      collapsed: true,
+      items: [
+        { text: '安装', link: '/notes/tools/cmake/startup' },
+        { text: '使用', link: '/notes/tools/cmake/usage' },
+        { text: '标记', link: '/notes/tools/cmake/flags' },
+        { text: '库', link: '/notes/tools/cmake/libraries' },
+        { text: '使用', link: '/notes/tools/cmake/example' },
+      ]
+    },
+    {
+      text: 'emacs',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/emacs/usage' },
+      ]
+    },
+    {
+      text: 'git',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/git/usage' },
+        { text: 'gitignore', link: '/notes/tools/git/gitignore' },
+      ]
+    },
+  ]
+}
 // 研习录
 const STUDY_RECORD = {
   text: '研习录',
@@ -572,6 +629,7 @@ const SIDEBAR = [
   ME,
   PLAY,
   QUICK_ACCESS,
+  TOOLS,
   CS,
   {
     text: '编程基础',
