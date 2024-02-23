@@ -248,6 +248,157 @@ const TOOLS = {
         { text: 'gitignore', link: '/notes/tools/git/gitignore' },
       ]
     },
+    {
+      text: 'htop',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/htop/usage' },
+      ]
+    },
+    {
+      text: 'iterm2',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/iterm2/iterm2' },
+      ]
+    },
+    {
+      text: 'jetbrains',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/jetbrains/idea' },
+      ]
+    },
+    {
+      text: 'mac',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/mac/tips' },
+        { text: '软件', link: '/notes/tools/mac/software' },
+      ]
+    },
+    {
+      text: 'make',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/make/usage' },
+      ]
+    },
+    {
+      text: 'markdown',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/markdown/usage' },
+      ]
+    },
+    {
+      text: 'maven',
+      collapsed: true,
+      items: [
+        { text: '介绍', link: '/notes/tools/maven/maven' },
+        { text: '使用', link: '/notes/tools/maven/usage' },
+        { text: '设置', link: '/notes/tools/maven/settings' },
+        { text: '插件', link: '/notes/tools/maven/plugins' },
+        { text: '项目', link: '/notes/tools/maven/project' },
+        { text: 'pom', link: '/notes/tools/maven/pom' },
+        { text: 'pom 示例', link: '/notes/tools/maven/pom-example' },
+        { text: '常用依赖', link: '/notes/tools/maven/dependencies' },
+      ]
+    },
+    {
+      text: 'plantuml',
+      collapsed: true,
+      items: [
+        { text: '介绍', link: '/notes/tools/plantuml/setup' },
+        { text: '类图', link: '/notes/tools/plantuml/classdiagram' },
+      ]
+    },
+    {
+      text: 'hexo',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/hexo/usage' },
+      ]
+    },
+    {
+      text: 'rsync',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/rsync/rsync' },
+      ]
+    },
+    {
+      text: 'rustscan',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/rustscan/usage' },
+      ]
+    },
+    {
+      text: 'sdkman',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/sdkman/sdkman' },
+      ]
+    },
+    {
+      text: 'tmux',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/tmux/usage' },
+      ]
+    },
+    {
+      text: 'typora',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/typora/usage' },
+      ]
+    },
+    {
+      text: 'vim',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/vim/usage' },
+        { text: '技巧', link: '/notes/tools/vim/tips' },
+        { text: '插件', link: '/notes/tools/vim/plugin' },
+      ]
+    },
+    {
+      text: 'vpn',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/vpn/vpn' },
+      ]
+    },
+    {
+      text: 'visual studio code',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/vs code/code-server' },
+      ]
+    },
+    {
+      text: 'wireguard',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/wireguard/usage' },
+      ]
+    },
+    {
+      text: 'yed',
+      collapsed: true,
+      items: [
+        { text: '使用', link: '/notes/tools/yed/yed' },
+      ]
+    },
+    {
+      text: 'zsh',
+      collapsed: true,
+      items: [
+        { text: '安装', link: '/notes/tools/zsh/install' },
+      ]
+    },
   ]
 }
 // 研习录
