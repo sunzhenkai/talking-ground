@@ -711,9 +711,6 @@ const FAVOR = {
           link: 'https://vitepress.dev/'
         }
       ]
-    },
-    {
-      text: '图书'
     }
   ]
 }
