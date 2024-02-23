@@ -409,7 +409,27 @@ const STUDY_RECORD = {
     {
       text: '基础',
       link: '/notes/study record/basic/index',
+      collapsed: true,
       items: [
+        {
+          text: '计算机科学',
+          link: '/notes/study record/basic/cs'
+        },
+        {
+          text: '操作系统',
+          link: '/notes/study record/basic/os'
+        },
+        {
+          text: 'C++',
+          link: '/notes/study record/basic/c++',
+          collapsed: true,
+          items: [
+            {
+              text: 'Socket 编程',
+              link: '/notes/study record/basic/socket/overall'
+            },
+          ]
+        },
       ]
     },
     {
@@ -435,7 +455,27 @@ const STUDY_RECORD = {
               link: '/notes/study record/reading/xxlggrm'
             }
           ]
+        },
+        {
+          text: '理财',
+          collapsed: true,
+          items: [
+            {
+              text: '小狗钱钱',
+              link: '/notes/study record/reading/xgqq'
+            }
+          ]
         }
+      ]
+    },
+    {
+      text: '效能',
+      collapsed: true,
+      items: [
+        {
+          text: 'OKR',
+          link: '/notes/study record/work efficiency/OKR'
+        },
       ]
     },
   ]
