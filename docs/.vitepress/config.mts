@@ -873,7 +873,7 @@ const SIDEBAR = [
   AI,
   FAVOR,
   STUDY_RECORD,
-  THOUGHTS,
+  //THOUGHTS,
   LINKS
 ];
 const SOCIAL_LINKS = [
