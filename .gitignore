@@ -1,5 +1,3 @@
 node_modules
 docs/.vitepress/cache
 nohup.out
-package-lock.json
-yarn.lock
